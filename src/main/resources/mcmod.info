@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mobai",
+  "name": "MobAI",
+  "description": "Defines an AI-controlled mob.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["gothictomato"],
+  "credits": "People who deal with my bullshit for doing so",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
