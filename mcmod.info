@@ -1,6 +1,6 @@
 [
 {
-  "modid": "mobai",
+  "modid": "${modid}",
   "name": "MobAI",
   "description": "Defines an AI-controlled mob.",
   "version": "${version}",
