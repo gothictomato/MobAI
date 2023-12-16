@@ -13,6 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
+def mcversion = '1.12.2'
 version = '0.0.0'
 group = 'io.gothictomato.mobai' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'mobai'
@@ -114,3 +115,13 @@ publishing {
         }
     }
 }
+
+
+task copyInfo(type: Copy) {
+   from '.'
+   include 'mcmod.info'
+   into 'src/main/resources'
+   expand 'modid': project.archivesBaseName, 'version': project.version, 'mcversion': mcversion
+}
+
+gradle.startParameter.taskNames = ['copyInfo', *gradle.startParameter.taskNames]
